@@ -1,0 +1,22 @@
+https://www.traccar.org/download/
+Install
+
+    Download and extract the installer package
+    Execute traccar.run file
+        sudo ./traccar.run
+    Start systemd service
+        sudo systemctl start traccar
+
+Uninstall
+
+    Stop systemd service
+        sudo systemctl stop traccar
+    Remove systemd service
+        sudo systemctl disable traccar
+        sudo rm /etc/systemd/system/traccar.service
+        sudo systemctl daemon-reload
+    Remove traccar directory
+        sudo rm -R /opt/traccar
+        
+        
+        https://www.traccar.org/forums/topic/build-traccar-from-source-via-command-line-method-on-ubuntu-server-16-10/
